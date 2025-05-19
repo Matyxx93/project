@@ -10,7 +10,3 @@ let TEMPS = BME280.temperature(BME280_T.T_C)
 for (let index = 0; index < 2; index++) {
     TEMPS += 1
 }
-basic.forever(function () {
-    basic.showNumber(BME280.temperature(BME280_T.T_C))
-    TEMPS = BME280.temperature(BME280_T.T_C)
-})
